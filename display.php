@@ -24,7 +24,8 @@
                         . You are booking the
                         <?php echo $_POST['hotel']; ?> for
                         <?php $date1 = $_POST['in'];  
-                        $date2 = $_POST['out'];   
+                        $date2 = $_POST['out'];
+                        // Formula to convert the dates into days   
                         $diff = floor(strtotime($date2)-strtotime($date1))/86400; 
                         echo $diff. " nights. It will cost " . "R" . ($price*$diff); 
                         ?>
