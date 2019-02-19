@@ -10,6 +10,7 @@
 </head>
 <body>
     <div class="column">
+        <!-- Box that displays if you make a duplicate booking -->
         <div class="box" id="move">
             <h1 class="title"> You have already made this booking! </h1>
             <div class="control" id="cancel">

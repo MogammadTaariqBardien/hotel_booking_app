@@ -10,6 +10,7 @@
 </head>
 <body>
     <div class="column">
+        <!-- Box that displays if a booking is made -->
         <div class="box" id="move">
             <h1 class="title"> Thank you for booking! </h1>
             <div class="control" id="cancel">

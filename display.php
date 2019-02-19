@@ -1,5 +1,5 @@
 <?php
-    require_once 'add.php';
+    require_once './inc/add.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,6 +14,7 @@
 <body>
     <div class="column">
         <div class="box" id="move">
+            <!-- PHP scripts that takes the information from the index page and displays it on this one -->
             <?php 
                 if(isset($_POST['submit']))  {
                     } ?> 
@@ -28,13 +29,16 @@
                         echo $diff. " nights. It will cost " . "R" . ($price*$diff); 
                         ?>
                     </p>
-                    <div class="control" >
-                        <a href = "finish.php"><button class="button" name="submit">Confirm</button></a>
-                        </div>
-                            <div class="control" id="cancel">
-                                <a href ="index.php"> <button class="button">Cancel</button></a>
-                            </div> 
-                        </div>
+            <!-- End of the scrips to display information -->
+            <!-- Div that contains buttons to confirm booking or cancel them -->
+                <div class="control" >
+                    <a href = "finish.php"><button class="button" name="submit">Confirm</button></a>
+                    </div>
+                        <div class="control" id="cancel">
+                            <a href ="index.php"> <button class="button">Cancel</button></a>
+                        </div> 
+                    </div>
                 </div>
+            <!-- End of Div -->
 </body>
 </html>

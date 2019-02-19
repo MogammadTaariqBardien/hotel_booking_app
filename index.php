@@ -1,6 +1,6 @@
 <?php
-    require_once 'connect.php';
-    require_once 'add.php';
+    require_once './config/connect.php';
+    require_once './inc/add.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,8 +12,8 @@
     <title>Hotel Booking Form</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- Script that runs to show an alert if you would like to submit the form or not -->
     <script type="text/javascript">
-
         function confSubmit(form) {
             if (confirm("Do you want to make this booking?")) {
             form.submit();
@@ -22,6 +22,7 @@
             }
         }
        </script>
+       <!-- End of Script -->
 </head>
 
 <body>
@@ -31,21 +32,25 @@
             <div class="columns">
                 <div class="column">
                     <div class="box">
+                        <!-- Start of form for booking a hotel -->
                         <form action="display.php" method="post" class="form">
+                            <!-- Div that contains the name input -->
                             <div class="field">
                                 <label class="label">Name:</label>
                                 <p class="control">
                                     <input class="input" type="text" name="name" placeholder="Please enter your name" required>
                                 </p>
                             </div>
-
+                            <!-- End of Div -->
+                            <!-- Div that contains the surname input -->
                             <div class="field">
                                 <label class="label">Surname:</label>
                                 <p class="control">
                                     <input class="input" type="text" name="surname" placeholder="Please enter your surname" required>
                                 </p>
                             </div>
-
+                            <!-- End of Div -->
+                            <!-- Div that contains hotel choices -->
                             <div class="field">
                                 <label class="label">Select your hotel:</label>
                                 <p class="control">
@@ -59,17 +64,20 @@
                                     </span>
                                 </p>
                             </div>
-
+                            <!-- End of Div -->
+                            <!-- Div that contains check out date -->
                             <div class="field">
                                 <label class="label">Check-In:</label>
                                 <input class="input" name="in" type="date" required>
                             </div>
-
+                            <!-- End of Div -->
+                            <!-- Div that contains check out date -->
                             <div class="field">
                                 <label class="label">Check-Out:</label>
                                 <input class="input" name="out" type="date" required>
                             </div>
-
+                            <!-- End of Div -->
+                            <!-- Contains buttons to submit and cancel the form -->
                             <div class="field">
                                 <div class="control" >
                                 <a href="display.php"> <button class="button" name="submit" onClick="confSubmit(this.form);">Submit</button></a>
@@ -78,11 +86,10 @@
                                     <button class="button">Cancel</button>
                                 </div>
                             </div>
-
+                            <!-- End of Div -->
                         </form>
+                        <!-- End of Form -->
                     </div>
-
-
             </div>
         </div>
     </section>
