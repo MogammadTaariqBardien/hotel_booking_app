@@ -23,4 +23,9 @@
 
 .section {
     padding : 0.8rem 0.2rem;
+    background: url("/imgs/resort.jpeg");
+}
+
+body {
+    background-image: url("/imgs/resort.jpeg");
 }

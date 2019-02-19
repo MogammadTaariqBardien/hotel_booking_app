@@ -12,19 +12,16 @@
     <title>Hotel Booking Form</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <script type="text/javascript">
 
-        <script type="text/javascript">
-
-            function confSubmit(form) {
+        function confSubmit(form) {
             if (confirm("Do you want to make this booking?")) {
             form.submit();
-            }
-
-            else {
+            } else {
             alert("Booking not made.");
             }
         }
-        </script>
+       </script>
 </head>
 
 <body>
